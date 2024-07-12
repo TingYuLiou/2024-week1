@@ -1,0 +1,76 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+    /* outline: 1px solid;*/
+}
+
+/* variable */
+:root{
+    --mainColor:white;
+    --secondColor:black;
+    --subColor:#00FFA3;
+}
+
+
+body {font-family: "Bruno Ace SC", sans-serif;line-height: 1.5; background: var(--secondColor);}
+.container{max-width: 1296px;margin: 0 auto;}
+img{ max-width: 100%;vertical-align: middle;}
+a{display: inline-block; text-decoration: none;color:var(--mainColor);}
+a:hover{color:var(--subColor);}
+li{list-style-type: none;}
+h1{color: var(--subColor);font-size: 128px;}
+h2{font-size: 64px;}
+h3{font-size: 20px;}
+
+/* btnStyle */
+.btnStyle{ padding: 12px 24px; color: var(--secondColor); background-color: var(--mainColor); border-radius: 32px; }
+.btnStyle:hover{ color:var(--secondColor); background-color: var(--subColor); }
+.btnStyle--black{color: var(--mainColor); background-color: var(--secondColor);}
+.btnStyle--green{color: var(--secondColor); background-color: var(--subColor);}
+
+
+/* header */
+.menu{ margin: 0 auto; display: flex; justify-content: space-between;margin: 40px auto; }
+
+/* banner */
+.banner{ display: flex; align-items: center; gap: 24px; }
+.bnTitle,.bnTxt__right { text-align: end;}
+.subTitle{ color: var(--mainColor); font-size: 64px; }
+
+/* Introduction */
+.container-fluid-intro{ background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true); }
+.intro{ display: flex; gap: 24px; padding-top: 160px ; padding-bottom: 160px }
+.intro__Box .subTitle h2{ margin-bottom: 36px; } 
+.introTxt{ max-width: 526px; color:var(--mainColor); margin-bottom: 32px; }
+.intro__img{ display: flex; gap:24px; }
+
+/* about */
+.container-fluid-about{ background-color: var(--mainColor); }
+.about{ display: flex; gap: 24px; padding:160px 0; }
+.cardList{ display: flex; gap: 24px; flex-wrap: wrap; margin: 24px 0; }
+.card{ max-width: 306px; padding: 16px; flex-basis: 50%; box-shadow: 0px 0px 8px rgba(0,0,0,0.2); }
+.txtBox{ max-width: 526px; }
+.about .txtBox h2{ color:var(--secondColor); margin-bottom: 36px; }
+.txtBox p{ font-size: 24px; }
+
+/* contract me */
+.container-fluid-contact{background: linear-gradient(#050014 25% , hsla(260, 93%, 11%, 0.85) 75%);}
+.contact{ display: flex; padding: 96px 0; justify-content: space-between; align-items: center; }
+.contact h2{ color: var(--mainColor); }
+.socialBtn{ display: flex; gap: 20px; box-shadow: 4px 4px 8px 0px #00000014; }
+.socialBtn img:hover{ border-radius: 40px; box-shadow: 0px 0px 16px 3px #9094FFE5; }
+.material-symbols-outlined{color:white;}
+.txtBox svg{position: relative; top:12px;}
+
+/* my product */
+.container-fluid-projects{ background:var(--mainColor);}
+.projects{ padding:160px 0; }
+.projects h2{text-align: end;padding-right: 280px;}
+.pjBox, .pjBox__item, .pjBox__item__top, .pjBox__item__bt{display: flex;gap: 24px;}
+.pjBox__item{flex-direction: column;gap: 28px;}
+.pjBox__item__top .txt{display: flex;flex-direction: column;justify-content: space-between;} 
+svg{position: relative; top:3px;}
+
+
+
+/* footer */
+.footer{ color: var(--mainColor); text-align: center; padding: 40px 0; }
